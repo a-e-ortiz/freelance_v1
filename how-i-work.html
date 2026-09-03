@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1c2430">
+
+  <title>How I Work — Alexandra Ortiz, Barbados</title>
+  <meta name="description" content="Preview before anything runs, built in small proven steps, documented on handover, and discreet. How operations and finance systems get built for your business.">
+
+  <meta property="og:title" content="How I Work — Alexandra Ortiz, Barbados">
+  <meta property="og:description" content="Preview before anything runs, built in small proven steps, documented on handover, and discreet. How operations and finance systems get built for your business.">
+  <meta property="og:type" content="website">
+  <!-- TODO: update to the real published address once a domain/host is chosen (see publish flow) -->
+  <meta property="og:url" content="https://example.com/how-i-work.html">
+  <!-- No og:image by design: no photography on this site, type-based social preview only -->
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/src/main.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="flex h-full flex-col bg-paper font-sans text-ink antialiased">
+
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-ink focus:px-4 focus:py-2 focus:text-paper">Skip to content</a>
+
+  <header class="border-b border-line">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <nav class="relative flex h-20 items-center justify-between" x-data="{ mobileMenuOpen: false }" aria-label="Primary">
+        <a href="/" class="flex items-center gap-3" aria-label="Alexandra Ortiz — Home">
+          <svg class="h-9 w-9 shrink-0" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <rect x="1" y="1" width="38" height="38" rx="6" stroke="currentColor" class="text-ink" stroke-width="1.25"/>
+            <path d="M20 10L20 30M11 25L20 10L29 25" stroke="currentColor" class="text-accent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="font-display text-lg font-semibold tracking-tight text-ink">Alexandra Ortiz</span>
+        </a>
+
+        <div class="hidden md:flex md:items-center md:gap-x-8">
+          <a href="/" class="text-sm text-ink-soft hover:text-ink">Home</a>
+          <a href="/services.html" class="text-sm text-ink-soft hover:text-ink">Services</a>
+          <a href="/how-i-work.html" aria-current="page" class="text-sm font-semibold text-ink">How I Work</a>
+          <a href="/about.html" class="text-sm text-ink-soft hover:text-ink">About</a>
+          <a href="/contact.html" class="rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-paper transition-colors hover:bg-accent-dark">Contact</a>
+        </div>
+
+        <div class="md:hidden">
+          <button @click="mobileMenuOpen = !mobileMenuOpen" :aria-expanded="mobileMenuOpen.toString()" aria-controls="mobile-menu" aria-label="Toggle menu" class="relative z-10 flex h-10 w-10 items-center justify-center text-ink">
+            <svg class="h-5 w-5 overflow-visible stroke-current" fill="none" stroke-width="1.75" stroke-linecap="round">
+              <path d="M0 1H16M0 8H16M0 15H16" :class="mobileMenuOpen && 'scale-90 opacity-0'" class="origin-center transition"></path>
+              <path d="M2 2L14 14M14 2L2 14" :class="!mobileMenuOpen && 'scale-90 opacity-0'" class="origin-center transition"></path>
+            </svg>
+          </button>
+        </div>
+
+        <div id="mobile-menu" x-show="mobileMenuOpen" x-cloak
+             x-transition:enter="transition ease-out duration-150"
+             x-transition:enter-start="opacity-0 scale-95"
+             x-transition:enter-end="opacity-100 scale-100"
+             x-transition:leave="transition ease-in duration-100"
+             x-transition:leave-start="opacity-100 scale-100"
+             x-transition:leave-end="opacity-0 scale-95"
+             @click.away="mobileMenuOpen = false"
+             class="absolute inset-x-0 top-full z-20 mt-2 flex origin-top flex-col gap-1 rounded-2xl border border-line bg-paper p-4 shadow-lg md:hidden">
+          <a href="/" @click="mobileMenuOpen = false" class="rounded-lg px-3 py-2.5 text-ink-soft hover:bg-paper-dim hover:text-ink">Home</a>
+          <a href="/services.html" @click="mobileMenuOpen = false" class="rounded-lg px-3 py-2.5 text-ink-soft hover:bg-paper-dim hover:text-ink">Services</a>
+          <a href="/how-i-work.html" @click="mobileMenuOpen = false" aria-current="page" class="rounded-lg px-3 py-2.5 font-semibold text-ink">How I Work</a>
+          <a href="/about.html" @click="mobileMenuOpen = false" class="rounded-lg px-3 py-2.5 text-ink-soft hover:bg-paper-dim hover:text-ink">About</a>
+          <a href="/contact.html" @click="mobileMenuOpen = false" class="mt-2 rounded-full bg-accent px-3 py-2.5 text-center font-semibold text-paper">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="flex-auto">
+
+    <section class="py-20 sm:py-28">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <h1 class="font-display text-4xl font-semibold tracking-tight text-ink sm:text-5xl">How I Work</h1>
+      </div>
+    </section>
+
+    <section class="border-t border-line pb-20 sm:pb-28">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="divide-y divide-line border-y border-line">
+
+          <div class="grid grid-cols-[2.5rem_1fr] gap-4 py-10 sm:grid-cols-[4rem_1fr] sm:gap-8">
+            <p class="font-display text-lg text-accent">01</p>
+            <div>
+              <h2 class="font-display text-xl font-medium text-ink">Preview before anything runs</h2>
+              <p class="mt-3 max-w-2xl leading-relaxed text-ink-soft">You see the proposal before it executes. Nothing posts to a live system without your approval.</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-[2.5rem_1fr] gap-4 py-10 sm:grid-cols-[4rem_1fr] sm:gap-8">
+            <p class="font-display text-lg text-accent">02</p>
+            <div>
+              <h2 class="font-display text-xl font-medium text-ink">Built in small proven steps</h2>
+              <p class="mt-3 max-w-2xl leading-relaxed text-ink-soft">You see working progress at agreed checkpoints, not one big reveal at the end.</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-[2.5rem_1fr] gap-4 py-10 sm:grid-cols-[4rem_1fr] sm:gap-8">
+            <p class="font-display text-lg text-accent">03</p>
+            <div>
+              <h2 class="font-display text-xl font-medium text-ink">Documented on handover</h2>
+              <p class="mt-3 max-w-2xl leading-relaxed text-ink-soft">Every build ships with written procedures and training, so you are never locked in to me.</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-[2.5rem_1fr] gap-4 py-10 sm:grid-cols-[4rem_1fr] sm:gap-8">
+            <p class="font-display text-lg text-accent">04</p>
+            <div>
+              <h2 class="font-display text-xl font-medium text-ink">Discreet</h2>
+              <p class="mt-3 max-w-2xl leading-relaxed text-ink-soft">I work inside live financial and personnel systems. Confidentiality is part of the job.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-ink" x-data>
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+      <div class="flex flex-col items-center gap-3 text-center sm:flex-row sm:items-baseline sm:justify-between sm:text-left">
+        <p class="font-display text-base text-paper">Alexandra Ortiz</p>
+        <div class="flex flex-col items-center gap-1 text-sm text-paper/70 sm:items-end">
+          <!-- TODO: replace with Alexandra's confirmed business email address -->
+          <a href="mailto:hello@alexandraortiz.com" class="transition-colors hover:text-accent">hello@alexandraortiz.com</a>
+          <p>Barbados</p>
+        </div>
+      </div>
+      <p class="mt-8 border-t border-paper/10 pt-6 text-center text-xs text-paper/50 sm:text-left">
+        &copy; <span x-text="new Date().getFullYear()">2026</span> Alexandra Ortiz. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

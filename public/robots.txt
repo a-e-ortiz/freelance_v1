@@ -1,0 +1,5 @@
+# TODO: confirm the final domain below once the site is published
+User-agent: *
+Allow: /
+
+Sitemap: https://example.com/sitemap.xml
