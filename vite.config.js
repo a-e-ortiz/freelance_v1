@@ -6,6 +6,7 @@ const page = (name) => fileURLToPath(new URL(name, import.meta.url))
 
 export default defineConfig({
   plugins: [tailwindcss()],
+  base: '/freelance_v1/',
   build: {
     rollupOptions: {
       // Multi-page site: list every top-level HTML page so `vite build`
